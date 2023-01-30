@@ -1,0 +1,72 @@
+:root{
+    --color-primary: hsl(218, 44%, 22%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-bg: hsl(212, 45%, 89%);
+    --color-base: hsl(220, 15%, 55%);
+}
+
+/* Common styles */
+
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: var(--color-bg);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h3{
+    color: var(--color-primary);
+    font-weight: 700px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+p{
+    color: var(--color-base);
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 1.2rem;
+}
+
+/* Card */
+.card{
+    max-width: 300px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    margin: 0 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.151);
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: max-content;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
